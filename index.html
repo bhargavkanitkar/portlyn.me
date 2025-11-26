@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bhargav Kanitkar - First year engineering student, cycling enthusiast, coder, and poet from Vasai">
+  <title>Bhargav Kanitkar - Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Bhargav Kanitkar</a>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Hello, I'm Bhargav Kanitkar</h1>
+        <p class="hero-subtitle">First Year Engineering Student | Cycling Enthusiast | Coder | Poet</p>
+        <a href="#about" class="hero-button">Learn More</a>
+      </div>
+      <div class="hero-image">
+        <img src="../src/assets/bhargav-photo.jpg" alt="Bhargav Kanitkar" class="profile-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p class="about-text">
+          I'm Bhargav Kanitkar, currently in first year of engineering. I am more like a social person - 
+          socializing and exploring is my thing. Cycling and sports are activities where I spend most of my time. 
+          I like coding in SQL and C. Sometimes I try to pen down my ideas in the form of a poem which feels so soothing. 
+          Living in Vasai and not visiting beaches? That's not possible! Cycling to various places in Vasai, 
+          not so very well known, is what I like the most.
+        </p>
+      </div>
+
+      <div class="interests-grid">
+        <div class="interest-card">
+          <div class="interest-icon">🚴</div>
+          <h3>Cycling</h3>
+          <p>Exploring hidden trails and paths around Vasai</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">💻</div>
+          <h3>Coding</h3>
+          <p>Building projects with SQL and C programming</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">✍️</div>
+          <h3>Poetry</h3>
+          <p>Expressing thoughts and emotions through words</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">🏖️</div>
+          <h3>Beaches</h3>
+          <p>Enjoying peaceful moments by the shore</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-index="0">
+          <img src="../src/assets/gallery/sunset-street.jpg" alt="Vasai Sunset">
+          <div class="gallery-overlay">
+            <h3>Vasai Sunset</h3>
+            <p>Evening colors over the streets</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="1">
+          <img src="../src/assets/gallery/palm-trees-night.jpg" alt="Stormy Skies">
+          <div class="gallery-overlay">
+            <h3>Stormy Skies</h3>
+            <p>Palm trees under dramatic clouds</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="2">
+          <img src="../src/assets/gallery/greenery-view.jpg" alt="Urban Greenery">
+          <div class="gallery-overlay">
+            <h3>Urban Greenery</h3>
+            <p>Nature meets the city</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="3">
+          <img src="../src/assets/gallery/sunset-pink.jpg" alt="Pink Horizon">
+          <div class="gallery-overlay">
+            <h3>Pink Horizon</h3>
+            <p>Beautiful sunset moments</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="4">
+          <img src="../src/assets/gallery/bird-sunrise.jpg" alt="Morning Flight">
+          <div class="gallery-overlay">
+            <h3>Morning Flight</h3>
+            <p>Dawn with a bird silhouette</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="5">
+          <img src="../src/assets/gallery/palm-sunset.jpg" alt="Golden Hour">
+          <div class="gallery-overlay">
+            <h3>Golden Hour</h3>
+            <p>Palm trees at sunset</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="6">
+          <img src="../src/assets/gallery/purple-twilight.jpg" alt="Twilight Magic">
+          <div class="gallery-overlay">
+            <h3>Twilight Magic</h3>
+            <p>Purple evening sky</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Modal -->
+  <div id="galleryModal" class="modal">
+    <button class="modal-close">&times;</button>
+    <div class="modal-content">
+      <img id="modalImage" src="" alt="">
+      <div class="modal-info">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:bhargav.kanitkar.ab@gmail.com">bhargav.kanitkar.ab@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <div>
+              <h3>Phone</h3>
+              <a href="tel:+917391898394">+91 7391898394</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📷</div>
+            <div>
+              <h3>Instagram</h3>
+              <a href="https://www.instagram.com/bhargavkanitkar?igsh=MTBuYjdoYzB3cTE3dQ==" target="_blank" rel="noopener noreferrer">@bhargavkanitkar</a>
+            </div>
+          </div>
+          <div class="contact-message">
+            <p>Feel free to reach out! I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Your Message" rows="6" required></textarea>
+          <button type="submit" class="submit-button">
+            Send Message
+            <span class="button-icon">➤</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Bhargav Kanitkar. All rights reserved.</p>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
